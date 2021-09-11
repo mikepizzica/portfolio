@@ -9,3 +9,69 @@
 body {
     background-color: #251e1e;
 }
+
+/* styling text within <p> tags */
+p {
+    font-size: 16px;
+}
+
+/* defining float values so that we can place our images properly in the main content */
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/* styling our header at top of page */
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    color: #ffffff;
+}
+
+    /* styling "Horiseon" text */
+    header > h1 {
+        display: inline-block;
+        font-size: 48px;
+    }
+
+        /* emphasize "seo" in "Horiseon" by offsetting color of these three letters */
+        header > h1 > span.seo {
+            color: #d9dcd6;
+        }
+
+    /* styling the right header text */
+    header > nav {
+        list-style-type: none;
+        padding-top: 15px;
+        margin-right: 20px;
+        float: right;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        display: inline-block;
+        margin-left: 25px;
+    }
+
+        header > nav > li {
+            display: inline-block;
+            margin-left: 25px;
+        }   
+
+            header > nav > li > a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+/* main image of a digital marketing meeting */
+div.flutes {
+    height: 200px;
+    margin-bottom: 25px;
+    background-image: url("../images/flutes.jpeg");
+    background-size: cover;
+    background-position: center;
+}
