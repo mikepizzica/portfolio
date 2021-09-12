@@ -13,6 +13,7 @@ body {
 /* styling text within <p> tags */
 p {
     font-size: 16px;
+    color:white
 }
 
 /* defining float values so that we can place our images properly in the main content */
@@ -28,46 +29,43 @@ p {
 
 /* styling our header at top of page */
 header {
-    padding: 20px;
+    padding: 20px 0px 20px 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    color: #ffffff;
+    color: #251e13;
 }
 
-    /* styling "Horiseon" text */
+    /* styling "Mike Pizzica" text */
     header > h1 {
         display: inline-block;
         font-size: 48px;
+        background-color: #b84848;
+        padding: 0px 15px 0px 50px
     }
-
-        /* emphasize "seo" in "Horiseon" by offsetting color of these three letters */
-        header > h1 > span.seo {
-            color: #d9dcd6;
-        }
 
     /* styling the right header text */
     header > nav {
         list-style-type: none;
         padding-top: 15px;
-        margin-right: 20px;
+        margin-right: 50px;
         float: right;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 20px;
         display: inline-block;
-        margin-left: 25px;
     }
 
         header > nav > li {
             display: inline-block;
-            margin-left: 25px;
+            margin-left: 35px;
         }   
 
             header > nav > li > a {
-                color: #ffffff;
+                color: #b84848;
                 text-decoration: none;
+                border-bottom:#b84848 4px solid;
+                ;
             }
 
-/* main image of a digital marketing meeting */
+/* main image of flutes */
 div.flutes {
     height: 200px;
     margin-bottom: 25px;
@@ -75,3 +73,52 @@ div.flutes {
     background-size: cover;
     background-position: center;
 }
+
+    div.flutes > h2 {
+        color:white;
+        background-color: #b84848;
+        position: absolute;
+        right: 75px;
+        top: 245px;
+        padding: 4px 10px 4px 10px;
+        color:#251e13
+    }
+
+main {
+    padding-right: 50px;
+}
+
+    article {
+        display:flex;
+        margin-bottom: 35px;
+    }
+
+        article > aside {
+            display: inline-block;
+            width: 200px;
+            text-align: right;
+            border-right: 5px solid white;
+        }
+
+        article > aside > p {
+            font-size:48px;
+            position:relative;
+            padding-right: 15px;
+        }
+
+        article > section {
+            display: flex;
+            width: 85%;
+            padding-left: 25px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-direction: row;
+            flex: 1;
+        }
+
+        article > section > img {
+            max-width: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
