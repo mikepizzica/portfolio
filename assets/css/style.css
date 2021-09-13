@@ -50,11 +50,11 @@ header {
         float: right;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 20px;
-        display: inline-block;
+        display: flex;
     }
 
         header > nav > li {
-            display: inline-block;
+            display: flex;
             margin-left: 35px;
         }   
 
@@ -74,7 +74,7 @@ div.flutes {
     background-position: center;
 }
 
-    div.flutes > h2 {
+    /* div.flutes > h2 {
         color:white;
         background-color: #b84848;
         position: absolute;
@@ -82,7 +82,7 @@ div.flutes {
         top: 245px;
         padding: 4px 10px 4px 10px;
         color:#251e13
-    }
+    } */
 
 main {
     padding-right: 50px;
@@ -90,12 +90,12 @@ main {
 
     article {
         display:flex;
+        flex-wrap: wrap;
         margin-bottom: 35px;
     }
 
         article > aside {
-            display: inline-block;
-            width: 200px;
+            flex: 1;
             text-align: right;
             border-right: 5px solid white;
         }
@@ -107,18 +107,70 @@ main {
         }
 
         article > section {
-            display: flex;
-            width: 85%;
+            flex: 4;
             padding-left: 25px;
             flex-wrap: wrap;
-            justify-content: space-between;
-            flex-direction: row;
-            flex: 1;
+            justify-content: space-evenly;
+            align-items: center;
+            display: flex;
         }
 
-        article > section > img {
-            max-width: 400px;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
+        #main-project {
+            border:#b84848 solid 5px;
+            flex: 0 0 100%;
+            margin: 10px;
+            position: relative;
         }
+
+        #main-project header {
+            padding: 20px;
+            background-color: #b84848;
+            position: absolute;
+            bottom: 20px;
+            left:-1px
+        }
+
+        .project {
+            border:#b84848 solid 5px;
+            flex: 0 0 50%;
+            position: relative;
+            flex-wrap: wrap;
+        }
+
+        .project header {
+            padding: 20px;
+            background-color: #b84848;
+            position: absolute;
+            bottom: 20px;
+            left:-1px
+        }
+
+        article > section > div img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            main,
+            article,
+            .project {
+                flex: 0 0 100%;
+                flex-direction: column;
+                margin: 10px;
+                padding-right: 0px;
+            }
+
+            article > aside {
+                text-align: center;
+                border-bottom: white solid 5px;
+                border-right: none;
+            }
+
+            article > section {
+                padding-left: 0px;
+            }
+
+            header,
+            nav > li {
+                text-align: center;
+                align-items: center;
+            }
