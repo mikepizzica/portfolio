@@ -149,8 +149,12 @@ main {
             width: 100%;
         }
 
-        #contact-me a {
+        #contact a {
             color: white;
+            text-decoration: none;
+            border-bottom: white 4px solid;
+            font-size: 20px;
+            ;
         }
 
         @media screen and (max-width: 768px) {
@@ -173,8 +177,39 @@ main {
                 padding-left: 0px;
             }
 
-            header,
-            nav > li {
+            header {
                 text-align: center;
-                align-items: center;
+            }
+
+            header > h1 {
+                padding:0px 15px;
+            }
+
+            header > nav {
+                float:none;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: space-evenly;
+                margin: 0px;
+            }
+
+            header > nav li {
+                margin-left: 0px;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: space-evenly;
+                display: flex;
+            }
+
+            #contact a {
+                color: white;
+                text-decoration: none;
+                border-bottom: white 4px solid;
+                font-size: 16px;
+                margin-top: 20px;
+                margin-bottom: 60px;
+            }
+
+            article > aside > p {
+                padding-right: 0px;
             }
