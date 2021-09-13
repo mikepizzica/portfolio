@@ -149,6 +149,10 @@ main {
             width: 100%;
         }
 
+        #contact-me a {
+            color: white;
+        }
+
         @media screen and (max-width: 768px) {
             main,
             article,
