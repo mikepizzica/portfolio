@@ -10,8 +10,6 @@ SO THAT I can review samples of their work and assess whether they're a good can
 ```
 
 ## Acceptance Criteria
-Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
-
 ```
 GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio

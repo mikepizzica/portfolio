@@ -1,7 +1,6 @@
 /* setting our universal selector */
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
 }
 
@@ -16,8 +15,12 @@ p {
     color:white
 }
 
+/* making images blocks to get rid of gaps */
+img {
+    display: block;
+}
 
-/* styling our header at top of page */
+/* styling header at top of page */
 header {
     padding: 20px 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -29,7 +32,6 @@ header {
 
     /* styling "Mike Pizzica" text */
     header > h1 {
-        display: inline;
         font-size: 64px;
         background-color: #b84848;
         padding: 10px 40px;
@@ -42,10 +44,6 @@ header {
 
     /* styling the right header text */
     header > nav {
-        list-style-type: none;
-        padding-top: 10px;
-        margin-right: 50px;
-        float: right;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 36px;
         display: flex;
@@ -53,7 +51,8 @@ header {
 
         /* styling the li so the items are spaced out */
         header > nav > li {
-            margin-left: 35px;
+            padding:20px;
+            list-style-type: none;
         }   
 
             /* syling the text within the li */
@@ -61,7 +60,6 @@ header {
                 color: #b84848;
                 text-decoration: none;
                 border-bottom:#b84848 4px solid;
-                ;
             }
 
 /* main image of flutes */
@@ -81,7 +79,7 @@ main {
     /* styling the articles */
     article {
         display:flex;
-        margin-bottom: 35px;
+        margin-bottom: 45px;
     }
 
         /* styling the article asides */
@@ -94,7 +92,6 @@ main {
             /* styling text within the article asides */
             article > aside > p {
                 font-size:48px;
-                position:relative;
                 padding-right: 15px;
             }
 
@@ -120,7 +117,7 @@ main {
                 padding: 20px;
                 background-color: #b84848;
                 position: absolute;
-                bottom: 20px;
+                bottom: 5px;
                 left:-1px
             }
 
@@ -138,7 +135,7 @@ main {
                 padding: 20px;
                 background-color: #b84848;
                 position: absolute;
-                bottom: 20px;
+                bottom: 5px;
                 left:-1px;
             }
 
@@ -169,16 +166,19 @@ article,
     padding-right: 0px;
 }
 
+/* styling for header */
 header {
     text-align: center;
     flex-wrap: wrap;
 }
 
+/* styling for header h1 */
 header > h1 {
     padding:0px 15px;
     width: 100%;
 }
 
+/* styling for header nav */
 header > nav {
     float:none;
     flex-wrap: wrap;
@@ -188,6 +188,7 @@ header > nav {
     width: 100%;
 }
 
+/* styling for header nav list */
 header > nav li {
     font-size: 48px;
     flex-wrap: wrap;
@@ -196,34 +197,35 @@ header > nav li {
     display: flex;
 }
 
+/* styling for flutes img */
 div.flutes {
     margin-bottom: 0px;
 }
 
+/* styling for asides */
 article > aside {
     text-align: center;
     border-bottom: white solid 5px;
     border-right: none;
 }
 
+/* styling for text within asides */
 article > aside > p {
     padding-right: 0px;
 }
 
-
+/* styling for sections */
 article > section {
     padding-left: 0px;
 }
 
+/* styling for main project */
 #main-project {
     margin: 20px 10px 10px 10px;
 }
 
+/* styling for contact section */
 #contact a {
-    color: white;
-    text-decoration: none;
-    border-bottom: white 4px solid;
-    font-size: 24px;
     margin-top: 20px;
     margin-bottom: 60px;
 }
