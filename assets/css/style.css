@@ -159,7 +159,7 @@ main {
 @media screen and (max-width: 768px),
         screen and (-webkit-min-device-pixel-ratio: 3) and (max-width:1920px)  {
 
-/* TODO add comments to this and everything below it */
+/* styling for mobile devices */
 main,
 article,
 .project {
@@ -169,59 +169,61 @@ article,
     padding-right: 0px;
 }
 
-            article > aside {
-                text-align: center;
-                border-bottom: white solid 5px;
-                border-right: none;
-            }
+header {
+    text-align: center;
+    flex-wrap: wrap;
+}
 
-            article > section {
-                padding-left: 0px;
-            }
+header > h1 {
+    padding:0px 15px;
+    width: 100%;
+}
 
-            header {
-                text-align: center;
-                flex-wrap: wrap;
-            }
+header > nav {
+    float:none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    margin: 0px;
+    width: 100%;
+}
 
-            header > h1 {
-                padding:0px 15px;
-            }
+header > nav li {
+    font-size: 48px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    display: flex;
+}
 
-            header > nav {
-                float:none;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                align-items: space-evenly;
-                margin: 0px;
-            }
+div.flutes {
+    margin-bottom: 0px;
+}
 
-            header > nav li {
-                font-size: 48px;
-                margin-left: 25px;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                align-items: space-evenly;
-                display: flex;
-            }
+article > aside {
+    text-align: center;
+    border-bottom: white solid 5px;
+    border-right: none;
+}
 
-            #contact a {
-                color: white;
-                text-decoration: none;
-                border-bottom: white 4px solid;
-                font-size: 24px;
-                margin-top: 20px;
-                margin-bottom: 60px;
-            }
+article > aside > p {
+    padding-right: 0px;
+}
 
-            article > aside > p {
-                padding-right: 0px;
-            }
 
-            div.flutes {
-                margin-bottom: 0px;
-            }
+article > section {
+    padding-left: 0px;
+}
 
-            #main-project {
-                margin: 10px 10px 10px 10px;
-            }
+#main-project {
+    margin: 20px 10px 10px 10px;
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
+    border-bottom: white 4px solid;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
