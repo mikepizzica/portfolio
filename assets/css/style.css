@@ -22,14 +22,22 @@ header {
     padding: 20px 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #251e13;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
     /* styling "Mike Pizzica" text */
     header > h1 {
         display: inline;
-        font-size: 48px;
+        font-size: 64px;
         background-color: #b84848;
-        padding: 0px 15px 0px 50px
+        padding: 10px 40px;
+    }
+
+    /* styling the header img */
+    header > img {
+        max-height: 250px;
     }
 
     /* styling the right header text */
@@ -173,6 +181,7 @@ article,
 
             header {
                 text-align: center;
+                flex-wrap: wrap;
             }
 
             header > h1 {
@@ -188,7 +197,8 @@ article,
             }
 
             header > nav li {
-                margin-left: 0px;
+                font-size: 48px;
+                margin-left: 25px;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
                 align-items: space-evenly;
