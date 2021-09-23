@@ -30,4 +30,4 @@ THEN I am presented with a responsive layout that adapts to my viewport
 https://mikepizzica.github.io/portfolio/
 
 ## Screenshot
-![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](./assets/images/screenshot-portfolio.png)
+![Screenshot of Portfolio](./assets/images/screenshot-portfolio.png)
