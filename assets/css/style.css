@@ -62,6 +62,12 @@ header {
                 border-bottom:#b84848 4px solid;
             }
 
+            header > nav > li > a:hover {
+                color: #beb2b2;
+                text-decoration: none;
+                border-bottom:#beb2b2 4px solid;
+            }
+
 /* main image of flutes */
 div.flutes {
     height: 200px;
@@ -153,7 +159,7 @@ main {
             }
 
 /* media query for mobile devices */
-@media screen and (max-width: 768px),
+@media screen and (max-width: 1100px),
         screen and (-webkit-min-device-pixel-ratio: 3) and (max-width:1920px)  {
 
 /* styling for mobile devices */
