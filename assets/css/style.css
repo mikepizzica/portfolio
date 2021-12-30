@@ -110,6 +110,10 @@ main {
             align-items: center;
             display: flex;
         }
+
+            #work-text {
+                text-decoration: underline;
+            }
             /* styling the main project */
             #main-project {
                 border:#b84848 solid 5px;
