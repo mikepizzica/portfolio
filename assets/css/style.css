@@ -112,7 +112,8 @@ main {
         }
 
             #work-text {
-                text-decoration: underline;
+                text-align: center;
+                font-size: 36px;
             }
             /* styling the main project */
             #main-project {
